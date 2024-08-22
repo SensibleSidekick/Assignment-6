@@ -1,13 +1,13 @@
 
 
 const Table = ({ sat }) => {
-  let listItem = sat.map((sat, id) =>
+  let listItem = sat.map((sat) =>
  
     <tr key={sat.id}>
       <td>{sat.name}</td>
       <td>{sat.type}</td>
       <td>{sat.launchDate}</td>
-      <td>{sat.operational === 'true' ? "Active" : "Inactive"}</td>
+      <td>{sat.operational === true ? "Active" : "Inactive"}</td>
     </tr>
 
   )
